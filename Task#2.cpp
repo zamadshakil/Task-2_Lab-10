@@ -1,18 +1,19 @@
 #include <iostream>
 #include <string>
+using namespace std;
 
 class Patient {
 public:
-	std::string name;
+	string name;
 	int age;
 
-	Patient(const std::string& patientName, int patientAge) : name(patientName), age(patientAge) {}
+	Patient(const string& patientName, int patientAge) : name(patientName), age(patientAge) {}
 };
 
 class Hospital {
 public:
 	void admit(const Patient* patient) const {
-		std::cout << "Hospital admits " << patient->name << ", age " << patient->age << std::endl;
+		cout << "Hospital admits " << patient->name << ", age " << patient->age << endl;
 	}
 };
 
